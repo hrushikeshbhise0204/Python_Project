@@ -46,7 +46,7 @@ class BankAccount:
 class BankApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Sindhe Bank - Banking System")
+        self.root.title("money Bank - Banking System")
 
         self.accounts = {}  # Dictionary to store accounts by account ID
 
@@ -57,7 +57,7 @@ class BankApp:
         self.home_frame = tk.Frame(root)
         self.home_frame.pack()
 
-        self.home_label = tk.Label(self.home_frame, text="Welcome to Sindhe Bank", font=("Arial", 18))
+        self.home_label = tk.Label(self.home_frame, text="Welcome to money Bank", font=("Arial", 18))
         self.home_label.pack(pady=20)
 
         self.create_account_button = tk.Button(self.home_frame, text="Create Account", width=20,
